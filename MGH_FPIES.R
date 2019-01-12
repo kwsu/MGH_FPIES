@@ -8,9 +8,15 @@ library(ggplot2)
 library(magrittr)
 
 ####Load files####
-mrn <- read.csv("C:/Users/ky587/fpies/Mrn.csv", header=TRUE, sep=",")
+mrn <- read.csv("C:/Users/moski_000/Dropbox (Partners HealthCare)/Manuscripts/Kuan-wen/FPIES chart review/csv/Mrn.csv", header=TRUE, sep=",")
+prv <- read.csv("C:/Users/moski_000/Dropbox (Partners HealthCare)/Manuscripts/Kuan-wen/FPIES chart review/csv/Provider.csv", header=TRUE, sep=",")
+
+
+####Dermo csv not yet created#####
 dermo <- read.csv("C:/Users/ky587/fpies/Dermo.csv", header=TRUE, sep=",")
 
+
+###################################################################
 table(dermo$Gender)
 prop.table(table(dermo$Gender))
 # Female=379(42.68%), Male=509(57.32%)
